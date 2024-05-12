@@ -1,0 +1,51 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-style: normal;
+    flex-direction: column;
+    color: white;
+
+    &__header {
+        color: orange;
+    }
+
+    &__content {
+        gap: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        hr {
+            height: 500px;
+        }
+
+        &__eductaion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: left;
+
+            &__info {
+                display: flex;
+                flex-direction: column;
+                gap: 30px; /* Add gap between items */
+            }
+        }
+    }
+
+    .education__header{
+        color: orange;
+    }
+    .education__year{
+        color: #a9adb8;
+    }
+    .education__description{
+        color: #a9adb8;
+    }
+}

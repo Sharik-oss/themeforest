@@ -1,0 +1,29 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+    height: 900px;
+    flex-direction: column;
+    &__header{
+        color: orange;
+    }
+    &__form{
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            input{
+                width: 300px;
+                padding: 20px 10px;
+                border-radius: 5px;
+                border: 1px solid #a9adb8;
+                
+            }
+        }
+    }
+}

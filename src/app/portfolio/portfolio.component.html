@@ -1,1 +1,12 @@
-<p>portfolio works!</p>
+<div class="wrapper">
+    <div class="wrapper__header">
+        <h1>Portfolio</h1>
+    </div>
+    <div class="wrapper__content">
+        <div  *ngFor="let jobname of jobNames">
+            <img [src]="jobname.img" alt="jobimg">
+            <p>Job name: {{jobname.name}}</p>
+            <p>Company: {{jobname.company}}</p>
+        </div>
+    </div>
+</div>

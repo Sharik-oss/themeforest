@@ -7,13 +7,17 @@ import { MainInformationComponent } from './main-information/main-information.co
 import { MainHomeComponent } from './main-home/main-home.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ResumeComponent } from './resume/resume.component';
+import { ContactsComponent } from './contacts/contacts.component';
 @NgModule({
   declarations: [
     AppComponent,
     MainInformationComponent,
     MainHomeComponent,
     AboutComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ResumeComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
