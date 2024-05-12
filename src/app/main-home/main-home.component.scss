@@ -1,0 +1,36 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    font-style: normal;
+    gap: 30px;
+    height: 800px;
+    color: white;
+    flex-direction: column;
+    &__greetings{
+        font-size: 25px;
+    }
+    span{
+        color: orange;
+        
+    }
+    &__info{
+        width: 800px;
+        font-size: 19px;
+        text-align: center;
+    }
+
+    &__socialweb{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 100px;
+        a{
+            color: white;
+        }
+    }
+}
+

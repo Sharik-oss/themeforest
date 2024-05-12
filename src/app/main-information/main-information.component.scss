@@ -1,0 +1,30 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    font-style: normal;
+    position: fixed;
+    &__header{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        a{
+            text-decoration-line: none;
+            color: white;
+            font-size: 20px;
+            &:hover{
+                color: orange;
+                text-decoration-line: underline;
+            }
+        }
+
+    }
+
+    
+}

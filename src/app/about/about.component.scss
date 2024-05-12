@@ -1,0 +1,54 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-style: normal;
+    height: 700px;
+    gap: 100px;
+    &__header{
+        h1{
+            color: orange;
+        }
+    }
+    
+
+    &__information{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 400px;
+        gap: 20px;
+    }
+
+    &__info_header{
+        img{
+            width: 450px;
+            height: 550px;
+        }
+    }
+
+    &__info_container{
+        width: 546px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h2{
+            color: orange;
+        }
+        p{
+            font-weight: 600;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-weight: 400;
+        }
+
+    }
+}
