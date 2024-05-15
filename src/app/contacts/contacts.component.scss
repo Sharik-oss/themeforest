@@ -8,21 +8,102 @@
     color: white;
     height: 900px;
     flex-direction: column;
+    gap: 100px;
     &__header{
         color: orange;
     }
     &__form{
-        form{
+        
+        h1{
+            color: orange;
+        }
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+        gap: 100px;
+        &__form{
+            width: 500px;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            gap: 30px;
             flex-direction: column;
-            input{
-                width: 300px;
-                padding: 20px 10px;
-                border-radius: 5px;
-                border: 1px solid #a9adb8;
+            form{
+
+                display: flex;
+                justify-content: left;
+                flex-direction: column;
+                gap: 30px;
+                input{
+                    width: 300px;
+                    padding: 20px 10px;
+                    border-radius: 5px;
+                    border: 1px solid #a9adb8;
+                    outline: none;
+                    &:focus{
+                        border: 1px solid orange;
+                    }
+                }
+                button{
+                    width: 200px;
+                    color: white;
+                    background-color: orange;
+                    border: none;
+                    border-radius: 10px;
+                    font-size: 20px;
+                    height: 40px;
+                }
+                textarea{
+                    border-radius: 5px;
+                    width: 415px;
+                    border: 1px solid white;
+                    height: 100px;
+                    outline: none;
+                    &:focus{
+                        border: 1px solid orange;
+                    }
+                }
+    
+            
+            }
+        }
+        &__social{
+            
+                    
+            font-family: 'Inter' sans-serif;
+            flex-direction: column;
+            display: flex;
+            width: 500px;
+            gap: 20px;
+            h1{
+                color: orange;
+            }
+            .mail{
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
                 
+                transition: 0.5s;
+                .mail-icon{
+                    border-radius: 50%;
+                    height: 50px;
+                    width: 50px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    border: 2px solid white;
+                    
+                }
+                .mail-info{
+                    display: flex;
+                    flex-direction: column;
+                    a{
+                        font-size: 16px;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+                    &:hover .mail-icon{
+                        border: 2px solid orange;
+                    }
             }
         }
     }
