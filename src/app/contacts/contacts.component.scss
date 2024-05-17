@@ -57,6 +57,7 @@
                     border: 1px solid white;
                     height: 100px;
                     outline: none;
+                    resize: none;
                     &:focus{
                         border: 1px solid orange;
                     }
@@ -79,10 +80,9 @@
             .mail{
                 display: flex;
                 flex-direction: row;
-                gap: 30px;
-                
-                transition: 0.5s;
+                gap: 30px;                
                 .mail-icon{
+
                     border-radius: 50%;
                     height: 50px;
                     width: 50px;
@@ -90,7 +90,16 @@
                     display: flex;
                     justify-content: center;
                     border: 2px solid white;
+                    transition: 0.2s;
+                    &:hover{
+                        border: 2px solid orange;
+                    }
                     
+                    
+                }
+                .mail-links{
+                    display: flex;
+                    flex-direction: column;
                 }
                 .mail-info{
                     display: flex;
@@ -99,11 +108,14 @@
                         font-size: 16px;
                         color: white;
                         text-decoration: none;
+                        transition: 0.2s;
+                        transition-timing-function: ease-in;
+                        &:hover{
+                            color: orange;
+                        }
                     }
                 }
-                    &:hover .mail-icon{
-                        border: 2px solid orange;
-                    }
+                    
             }
         }
     }

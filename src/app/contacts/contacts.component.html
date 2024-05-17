@@ -22,9 +22,35 @@
                 </div>
                 <div class="mail-info">
                     <h3>Email</h3>
-                    <a href="">example&#64;example.com</a>
-                    <a href="">info&#64;support.com</a>
+                    <div class="mail-links" *ngFor="let link of emailAdresses">
+                        <a href="">{{link}}</a>
+                    </div>
                 </div>
+                
+            </div>
+            <div class="mail">
+                <div class="mail-icon">
+                    <i class="fa-solid fa-phone-volume fa-xl"></i>
+                </div>
+                <div class="mail-info">
+                    <h3>Phone</h3>
+                    <div class="mail-links" *ngFor="let phone of phones">
+                        <a href="">{{phone}}</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="mail">
+                <div class="mail-icon">
+                    <i class="fa-solid fa-location-dot fa-xl"></i>
+                </div>
+                <div class="mail-info">
+                    <h3>Address</h3>
+                    <div class="mail-links" *ngFor="let address of addesses">
+                        <a href="">{{address}}</a>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
