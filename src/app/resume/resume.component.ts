@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { education } from '../education';
 import { experience } from '../experience';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
+
 
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.scss'
 })
-export class ResumeComponent {
+export class ResumeComponent implements OnInit {
   educations: education[] = [
     {
       name: "Mater of comupter science",
@@ -50,5 +53,10 @@ export class ResumeComponent {
     }
     
   ]
+
+  ngOnInit(): void {
+    Aos.init()
+    Aos.refresh()
+}
 
 }

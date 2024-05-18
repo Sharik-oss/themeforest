@@ -1,13 +1,13 @@
-<div class="wrapper">
+<div class="wrapper" id="resume">
     <div class="wrapper__header">
         <h1>Resume</h1>
     </div>
     <div class="wrapper__content">
         <div class="wrapper__content__education">
             <div>
-                <h1><i style="color: rgba(255, 255, 255, 0.799);"class="fa-solid fa-graduation-cap"></i> Education</h1>
+                <h1 data-aos="fade-right" data-aos-duration="1000"><i style="color: rgba(255, 255, 255, 0.799);"class="fa-solid fa-graduation-cap"></i> Education</h1>
             </div>
-            <div class="wrapper__content__eductaion__info">
+            <div class="wrapper__content__eductaion__info" data-aos="fade-right" data-aos-duration="1000">
                 <div *ngFor="let education of educations">
                     <h1 class="education__header">{{education.name}}</h1>
                     <h3 class="education__year">{{education.year}}</h3>
@@ -20,8 +20,8 @@
         </div>
         <hr>
         <div class="wrapper__content__experience">
-            <h1><i style="color: rgba(255, 255, 255, 0.799);" class="fa-solid fa-user-tie"></i> Experience</h1>
-            <div class="wrapper__content__eductaion__info">
+            <h1 data-aos="fade-left" data-aos-duration="1000"><i style="color: rgba(255, 255, 255, 0.799);" class="fa-solid fa-user-tie"></i> Experience</h1>
+            <div class="wrapper__content__eductaion__info" data-aos="fade-left" data-aos-duration="1000">
                 <div class="information" *ngFor="let expericence of expericences">
                     <h1 class="education__header">{{expericence.name}}</h1>
                     <h3 class="education__year">{{expericence.year}}</h3>

@@ -7,6 +7,8 @@
     font-family: "Playfair Display", serif;
     font-weight: 800;
     font-style: normal;
+    z-index: 10;
+    background-color: #0a101e;
     position: fixed;
     &__header{
         
@@ -19,6 +21,7 @@
             color: white;
             font-size: 20px;
             &:hover{
+                cursor: pointer;
                 color: orange;
                 text-decoration-line: underline;
             }
@@ -28,3 +31,4 @@
 
     
 }
+
