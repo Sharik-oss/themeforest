@@ -8,10 +8,10 @@
     font-weight: 800;
     font-style: normal;
     z-index: 10;
-    background-color: #0a101e;
+    background-color: #050b18;
+    border-bottom:1px solid #f15e5e;
     position: fixed;
     &__header{
-        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -19,7 +19,8 @@
         a{
             text-decoration-line: none;
             color: white;
-            font-size: 20px;
+            font-size: 16px;
+            font-weight: 600;
             &:hover{
                 cursor: pointer;
                 color: orange;

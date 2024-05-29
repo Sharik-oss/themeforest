@@ -6,21 +6,26 @@
     font-weight: 800;
     font-style: normal;
     gap: 30px;
-    height: 900px;
+    min-height: 900px;
     color: white;
     background: url('../../assets/main-bg.jpg');
     flex-direction: column;
     &__greetings{
-        font-size: 25px;
+        font-size: 35px;
+        letter-spacing: -2px;
     }
     span{
-        color: orange;
+        color: #f15e5e;
         
     }
     &__info{
-        width: 800px;
-        font-size: 19px;
         text-align: center;
+        &>p{
+            font-weight: 200 ;
+            max-width: 800px;
+            line-height:140% ;
+            font-size: 24px;
+        }
     }
 
     &__socialweb{

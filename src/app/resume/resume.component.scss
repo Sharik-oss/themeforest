@@ -13,7 +13,15 @@
 
 
     &__header {
-        color: orange;
+        color: #f15e5e;
+        padding-bottom:80px;
+        font-size:34px;
+        font-weight: 600;
+        letter-spacing: -0.56px;
+        text-transform: uppercase;
+        h1{
+            font-size:34px;
+        }
     }
 
     &__content {
@@ -22,7 +30,8 @@
         align-items: center;
         justify-content: center;
         flex-direction: row;
-
+        overflow: hidden;
+        width:100%;
         hr {
             height: 500px;
         }
@@ -43,7 +52,7 @@
     }
 
     .education__header{
-        color: orange;
+        color: #f15e5e;
     }
     .education__year{
         color: #a9adb8;

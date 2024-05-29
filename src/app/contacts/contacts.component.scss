@@ -7,17 +7,17 @@
     font-style: normal;
     background-color: #070d1b;
     color: white;
-    height: 900px;
+    height: 700px;
     flex-direction: column;
     gap: 100px;
     
     &__header{
-        color: orange;
+        color: #f15e5e;
     }
     &__form{
         
         h1{
-            color: orange;
+            color: #f15e5e;
         }
         display: flex;
         justify-content: left;
@@ -37,23 +37,29 @@
                 input{
                     background-color: #070d1b;
                     color: white;
-                    width: 300px;
+                    width: 100%;
+                    max-width: 450px;
                     padding: 20px 10px;
                     border-radius: 5px;
                     border: 1px solid #a9adb8;
                     outline: none;
+
+                    font-size:14px;
+                    font-weight: 600;
                     &:focus{
-                        border: 1px solid orange;
+                        border: 1px solid #f15e5e;
                     }
                 }
                 button{
                     width: 200px;
                     color: white;
-                    background-color: orange;
+                    background-color: #f15e5e;
                     border: none;
-                    border-radius: 10px;
-                    font-size: 20px;
-                    height: 40px;
+                    border-radius: 6px;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    height: 50px;
                     &:hover{
                         cursor: pointer;
                     }
@@ -64,13 +70,17 @@
                     background-color: #070d1b;
                     color: white;
                     border-radius: 5px;
-                    width: 415px;
+                    width: 100%;
+                    max-width: 450px;
                     border: 1px solid white;
                     height: 100px;
                     outline: none;
                     resize: none;
+                    padding: 5px 0px 0px 12px;
+                    font-size:14px;
+                    font-weight: 600;
                     &:focus{
-                        border: 1px solid orange;
+                        border: 1px solid #f15e5e;
                     }
                 }
     
@@ -86,14 +96,17 @@
             width: 500px;
             gap: 20px;
             h1{
-                color: orange;
+                color: #f15e5e;
+            }
+            & > p{
+                font-weight: 200;
+                line-height: 140%;
             }
             .mail{
                 display: flex;
                 flex-direction: row;
                 gap: 30px;                
                 .mail-icon{
-
                     border-radius: 50%;
                     height: 50px;
                     width: 50px;
@@ -103,7 +116,7 @@
                     border: 2px solid white;
                     transition: 0.2s;
                     &:hover{
-                        border: 2px solid orange;
+                        border: 2px solid #f15e5e;
                     }
                     
                     
@@ -115,14 +128,16 @@
                 .mail-info{
                     display: flex;
                     flex-direction: column;
+                    gap:5px;
                     a{
                         font-size: 16px;
                         color: white;
                         text-decoration: none;
                         transition: 0.2s;
+                        font-weight: 200;
                         transition-timing-function: ease-in;
                         &:hover{
-                            color: orange;
+                            color: #f15e5e;
                         }
                     }
                 }

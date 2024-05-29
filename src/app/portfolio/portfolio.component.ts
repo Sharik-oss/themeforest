@@ -41,7 +41,7 @@ export class PortfolioComponent implements OnInit{
       name : "UX/UI",
       company : "example",
       img: '../../assets/example.jpg'
-    },
+    }
   ]
     ngOnInit(): void {
       Aos.init()

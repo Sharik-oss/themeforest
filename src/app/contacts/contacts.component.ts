@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Component, HostListener, Inject, PLATFORM_ID, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-contacts',
@@ -20,4 +21,6 @@ export class ContactsComponent {
     "7 Rockland St.Brownsburg, IN 46112",
     "995 Sunbeam Street North Canton, OH 44720"
   ]
+
+
 }

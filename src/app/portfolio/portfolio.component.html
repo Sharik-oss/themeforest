@@ -3,8 +3,8 @@
         <h1>Portfolio</h1>
     </div>
     <div class="wrapper__content" data-aos="fade-down">
-        <div  *ngFor="let jobname of jobNames">
-            <img [src]="jobname.img" alt="jobimg">
+        <div  *ngFor="let jobname of jobNames" class="wrapper__content-item">
+            <img class="wrapper__content-img" [src]="jobname.img" alt="jobimg">
             <p>Job name: {{jobname.name}}</p>
             <p>Company: {{jobname.company}}</p>
         </div>
